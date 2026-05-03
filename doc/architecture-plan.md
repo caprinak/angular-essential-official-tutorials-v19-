@@ -40,13 +40,13 @@ ng-learning-lab/
 │   │   │   ├── learn-angular/     # "Learn Angular" tutorial (5 steps implemented)
 │   │   │   │   ├── pages/         # Routable page components (step1–step5)
 │   │   │   │   └── learn-angular.routes.ts
-│   │   │   ├── signals/           # "Signals" tutorial (placeholder)
+│   │   │   ├── signals/           # "Signals" tutorial (10 steps implemented)
 │   │   │   │   └── signals.routes.ts
-│   │   │   ├── signal-forms/      # "Signal Forms" tutorial (placeholder — needs Angular 22)
+│   │   │   ├── signal-forms/      # "Signal Forms" tutorial (5 steps implemented)
 │   │   │   │   └── signal-forms.routes.ts
-│   │   │   ├── first-app/         # "First App (Homes)" tutorial (placeholder)
+│   │   │   ├── first-app/         # "First App (Homes)" tutorial (14 steps implemented)
 │   │   │   │   └── first-app.routes.ts
-│   │   │   └── deferrable-views/  # "Deferrable Views" tutorial (placeholder)
+│   │   │   └── deferrable-views/  # "Deferrable Views" tutorial (3 steps implemented)
 │   │   │       └── deferrable-views.routes.ts
 │   │   │
 │   │   ├── pages/                 # Global pages (not tutorial-specific)
@@ -164,7 +164,7 @@ The sidebar will automatically pick up the new entry from the registry.
 
 ---
 
-## 8. Known Limitations
+## 8. Known Limitations & Adaptations
 
-- **Signal Forms** and some **Signals** tutorials reference `@angular/forms/signals`, which is an Angular 22+ API. Our project uses Angular 19.2. These steps show "Coming Soon" until we either upgrade Angular or implement compatible versions using Angular 19's reactive forms.
+- **Signal Forms and Advanced Signals**: Some official tutorials reference `@angular/forms/signals` and newer APIs (like `resource` or `linkedSignal`) which are Angular 22+ features. Since this project is pinned to Angular 19.2 for stability, these steps have been **adapted** using Angular 19's `ReactiveFormsModule` and standard `computed()`/`effect()` signals to achieve the exact same functionality and learning outcomes.
 - The `tutorials/` and `tutorials-reference/` folders are excluded from compilation (`tsconfig.app.json`) — they exist purely as code reference.
