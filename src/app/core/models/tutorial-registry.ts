@@ -90,7 +90,9 @@ export const TUTORIAL_REGISTRY: TutorialCategory[] = [
     description: 'Best practices and advanced patterns from angular.dev.',
     icon: '🎓',
     steps: [
-      { id: 'el-1', title: 'Adev Best Practices', route: 'best-practices' },
+      { id: 'el-1', title: '1. Adev Best Practices', route: 'best-practices' },
+      { id: 'el-2', title: '2. Advanced Components', route: 'advanced-components' },
+      { id: 'el-3', title: '3. Custom Pipes', route: 'custom-pipes' },
     ],
   },
 ];

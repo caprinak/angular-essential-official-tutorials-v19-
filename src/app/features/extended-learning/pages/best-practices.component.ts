@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 
       <div class="card">
         <h3>1. Signal-Based View Queries</h3>
-        <p>Instead of <code>@ViewChild('ref')</code>, use <code>viewChild('ref')</code> which returns a Signal.</p>
+        <p>Instead of <code>&#64;ViewChild('ref')</code>, use <code>viewChild('ref')</code> which returns a Signal.</p>
         <div class="demo-area">
           <input #searchBox type="text" placeholder="Type something..." (input)="onInput()" />
           <p>Input Width Signal: <b>{{ inputWidth() }}px</b></p>
