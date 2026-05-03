@@ -1,0 +1,48 @@
+import {
+  AUTO_STYLE,
+  AnimationBuilder,
+  AnimationFactory,
+  AnimationGroupPlayer,
+  AnimationMetadataType,
+  BrowserAnimationBuilder,
+  NoopAnimationPlayer,
+  animate,
+  animateChild,
+  animation,
+  group,
+  keyframes,
+  query,
+  sequence,
+  stagger,
+  state,
+  style,
+  transition,
+  trigger,
+  useAnimation,
+  ɵPRE_STYLE
+} from "./chunk-IDARLSTO.js";
+import "./chunk-3FDAJ56C.js";
+import "./chunk-MLSFSH6F.js";
+export {
+  AUTO_STYLE,
+  AnimationBuilder,
+  AnimationFactory,
+  AnimationMetadataType,
+  NoopAnimationPlayer,
+  animate,
+  animateChild,
+  animation,
+  group,
+  keyframes,
+  query,
+  sequence,
+  stagger,
+  state,
+  style,
+  transition,
+  trigger,
+  useAnimation,
+  AnimationGroupPlayer as ɵAnimationGroupPlayer,
+  BrowserAnimationBuilder as ɵBrowserAnimationBuilder,
+  ɵPRE_STYLE
+};

@@ -1,0 +1,20 @@
+<div class="home-page">
+  <div class="hero">
+    <h1>Welcome to Angular Learning Lab 🚀</h1>
+    <p class="hero-subtitle">
+      Select a tutorial from the sidebar to start practicing. Each category contains step-by-step lessons
+      with interactive demos.
+    </p>
+  </div>
+
+  <div class="tutorial-grid">
+    @for (tutorial of tutorials; track tutorial.id) {
+      <a class="tutorial-card" [routerLink]="['/', tutorial.id, 'step-1']">
+        <div class="card-icon">{{ tutorial.icon }}</div>
+        <h3 class="card-title">{{ tutorial.title }}</h3>
+        <p class="card-desc">{{ tutorial.description }}</p>
+        <span class="card-steps">{{ tutorial.steps.length }} steps</span>
+      </a>
+    }
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<aside class="sidebar">
+  <!-- Brand -->
+  <div class="sidebar-brand">
+    <span class="brand-icon">🅰️</span>
+    <span class="brand-text">Angular Lab</span>
+  </div>
+
+  <!-- Home link -->
+  <a class="nav-item home-link"
+     routerLink="/"
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+    <span class="nav-icon">🏠</span>
+    <span>Home</span>
+  </a>
+
+  <!-- Tutorial categories -->
+  <nav class="nav-categories">
+    @for (category of tutorials; track category.id) {
+      <div class="nav-category">
+        <button class="category-toggle"
+                [class.expanded]="isCategoryExpanded(category.id)"
+                (click)="toggleCategory(category.id)">
+          <span class="nav-icon">{{ category.icon }}</span>
+          <span class="category-label">{{ category.title }}</span>
+          <span class="chevron">›</span>
+        </button>
+
+        @if (isCategoryExpanded(category.id)) {
+          <div class="category-steps" @expandCollapse>
+            @for (step of category.steps; track step.id) {
+              <a class="step-link"
+                 [routerLink]="['/', category.id, step.route]"
+                 routerLinkActive="active">
+                {{ step.title }}
+              </a>
+            }
+          </div>
+        }
+      </div>
+    }
+  </nav>
+</aside>
