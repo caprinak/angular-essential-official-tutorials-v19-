@@ -84,4 +84,13 @@ export const TUTORIAL_REGISTRY: TutorialCategory[] = [
       { id: 'step-3', title: '3. Defer Triggers', route: 'step-3' },
     ]
   },
+  {
+    id: 'extended-learning',
+    title: 'Extended Learning',
+    description: 'Best practices and advanced patterns from angular.dev.',
+    icon: '🎓',
+    steps: [
+      { id: 'el-1', title: 'Adev Best Practices', route: 'best-practices' },
+    ],
+  },
 ];

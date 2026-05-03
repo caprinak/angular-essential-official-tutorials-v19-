@@ -33,6 +33,11 @@ export const routes: Routes = [
         loadChildren: () =>
           import('./features/deferrable-views/deferrable-views.routes').then(m => m.deferrableViewsRoutes),
       },
+      {
+        path: 'extended-learning',
+        loadChildren: () =>
+          import('./features/extended-learning/extended-learning.routes').then(m => m.extendedLearningRoutes),
+      },
     ],
   },
   { path: '**', redirectTo: '' },
