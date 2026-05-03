@@ -41,7 +41,7 @@ import { ArticleCommentsComponent } from '../components/article-comments.compone
     .demo-container { max-width: 640px; }
     .step-description { color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
     .demo-box { padding: 24px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); }
-    article p { line-height: 1.7; margin-bottom: 16px; color: #334155; }
+    article p { line-height: 1.7; margin-bottom: 16px; color: var(--text-main); }
     .controls { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
     .primary-btn {
       padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;

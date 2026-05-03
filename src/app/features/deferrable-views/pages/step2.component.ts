@@ -40,7 +40,7 @@ import { ArticleCommentsComponent } from '../components/article-comments.compone
     .demo-container { max-width: 640px; }
     .step-description { color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
     .demo-box { padding: 24px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); }
-    article p { line-height: 1.7; margin-bottom: 16px; color: #334155; }
+    article p { line-height: 1.7; margin-bottom: 16px; color: var(--text-main); }
     .placeholder-box, .loading-box, .error-box {
       margin-top: 24px; padding: 20px; border-radius: 8px; border: 1px dashed #cbd5e1; text-align: center; color: #64748b;
     }

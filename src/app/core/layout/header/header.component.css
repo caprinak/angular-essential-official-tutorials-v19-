@@ -74,6 +74,12 @@
   white-space: nowrap;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .header-badge {
   background: #e8f5e9;
   color: #2e7d32;

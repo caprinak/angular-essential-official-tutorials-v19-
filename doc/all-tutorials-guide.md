@@ -80,4 +80,8 @@ Welcome to the comprehensive guide for the Angular Learning Lab! This document o
 *   **Adev Best Practices:** Utilizing Signal-based view queries (`viewChild`) and keeping logic pure with `computed()`.
 *   **Advanced Components:** Implementing sophisticated state-resetting patterns using Angular 19's `linkedSignal`.
 *   **Custom Pipes:** Building pure pipes (e.g., `TimeAgoPipe`) for highly performant data transformation in templates.
+*   **Architecture Patterns:** Migration of core architecture logic from `angular.dev`, including:
+    *   **Custom Title Strategy:** Automatically syncing browser tab titles with the active route.
+    *   **Theming Magic:** A reactive `ThemeService` that toggles a `.dark-mode` class on the root element. This triggers a **CSS Variable swap** in `styles.css`, allowing the entire app to change colors without a page reload or complex logic in components.
+    *   **Modern DI:** Using the `inject()` function exclusively for cleaner, more readable services and components.
 *   **Custom Directives:** Enhancing UX with reusable directives like `ClickOutsideDirective` and `ExternalLinkDirective`.

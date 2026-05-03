@@ -48,12 +48,12 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [`
     .demo-container { max-width: 800px; }
-    .card { background: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
-    .demo-area { margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px dashed #cbd5e1; }
+    .card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .demo-area { margin-top: 16px; padding: 16px; background: rgba(0,0,0,0.02); border-radius: 8px; border: 1px dashed var(--border-color); }
     .selector { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; }
-    button { padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 6px; background: white; cursor: pointer; transition: all 0.2s; }
+    button { padding: 6px 12px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--bg-card); color: var(--text-main); cursor: pointer; transition: all 0.2s; }
     button.active { background: var(--primary-color); color: white; border-color: var(--primary-color); }
-    .child-state input { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; margin-top: 8px; }
+    .child-state input { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); margin-top: 8px; background: var(--bg-card); color: var(--text-main); }
     .hint { font-size: 0.8rem; color: #64748b; font-style: italic; display: block; margin-top: 8px; }
     .stats p { margin: 4px 0; }
     .valid { color: #2e7d32; }

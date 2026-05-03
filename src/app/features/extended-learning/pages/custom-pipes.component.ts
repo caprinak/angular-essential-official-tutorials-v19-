@@ -34,10 +34,10 @@ import { TimeAgoPipe } from '../pipes/time-ago.pipe';
   `,
   styles: [`
     .demo-container { max-width: 800px; }
-    .card { background: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
-    .demo-area { margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px dashed #cbd5e1; }
+    .card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .demo-area { margin-top: 16px; padding: 16px; background: rgba(0,0,0,0.02); border-radius: 8px; border: 1px dashed var(--border-color); }
     .activity-feed { list-style: none; padding: 0; margin-bottom: 16px; }
-    .activity-feed li { padding: 8px 0; border-bottom: 1px solid #e2e8f0; }
+    .activity-feed li { padding: 8px 0; border-bottom: 1px solid var(--border-color); }
     .user { font-weight: 700; color: var(--primary-color); }
     .time { color: #64748b; font-size: 0.85rem; margin-left: 8px; }
     button { padding: 8px 16px; background: var(--primary-color); color: white; border: none; border-radius: 6px; cursor: pointer; }

@@ -43,9 +43,9 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [`
     .demo-container { max-width: 800px; }
-    .card { background: white; border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
-    .demo-area { margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px dashed #cbd5e1; }
-    input { padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1; width: 100%; margin-bottom: 12px; }
+    .card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .demo-area { margin-top: 16px; padding: 16px; background: rgba(0,0,0,0.02); border-radius: 8px; border: 1px dashed var(--border-color); }
+    input { padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); width: 100%; margin-bottom: 12px; background: var(--bg-card); color: var(--text-main); }
     .ref-indicator { height: 4px; background: var(--primary-color); border-radius: 2px; transition: width 0.2s; }
     .theme-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
     .color-box { padding: 12px; border-radius: 6px; text-align: center; color: white; font-weight: 600; font-size: 0.8rem; }

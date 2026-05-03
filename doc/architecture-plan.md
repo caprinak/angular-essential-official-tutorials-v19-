@@ -168,3 +168,38 @@ The sidebar will automatically pick up the new entry from the registry.
 
 - **Signal Forms and Advanced Signals**: Some official tutorials reference `@angular/forms/signals` and newer APIs (like `resource` or `linkedSignal`) which are Angular 22+ features. Since this project is pinned to Angular 19.2 for stability, these steps have been **adapted** using Angular 19's `ReactiveFormsModule` and standard `computed()`/`effect()` signals to achieve the exact same functionality and learning outcomes.
 - The `tutorials/` and `tutorials-reference/` folders are excluded from compilation (`tsconfig.app.json`) — they exist purely as code reference.
+
+---
+
+## 9. Theme System (Dark Mode)
+
+The application features a robust, reactive theme system migrated from the `angular.dev` architecture.
+
+### How it Works
+1.  **ThemeService**: A central reactive service that manages the `theme` state (light, dark, or system) using an Angular **Signal**.
+2.  **Persistence**: The service automatically syncs the preferred theme to `localStorage`.
+3.  **System Detection**: It listens to the `(prefers-color-scheme: dark)` media query to support the "System" setting.
+4.  **DOM Manipulation**: The service applies/removes the `.dark-mode` class on the `<html>` root element.
+
+### CSS Variables & Overrides
+The project uses **CSS Custom Properties (Variables)** for all colors. When the `.dark-mode` class is active, these variables are overridden in `styles.css`:
+
+```css
+/* Light Mode (Default) */
+:root {
+  --bg-body: #f0f2f5;
+  --text-main: #1e293b;
+}
+
+/* Dark Mode Overrides */
+.dark-mode {
+  --bg-body: #0f172a;
+  --text-main: #f1f5f9;
+}
+```
+
+By using `var(--bg-body)` instead of hardcoded colors in component styles, the entire UI updates instantly when the theme is toggled.
+
+### Best Practice: Avoid Hardcoded Colors
+When building components, **never** hardcode colors like `color: #334155;` in the component's `styles` array if you want dark mode to work. Always use the provided CSS variables (e.g., `var(--text-main)`) so the text adapts automatically to the active theme.
+

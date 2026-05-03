@@ -93,6 +93,7 @@ export const TUTORIAL_REGISTRY: TutorialCategory[] = [
       { id: 'el-1', title: '1. Adev Best Practices', route: 'best-practices' },
       { id: 'el-2', title: '2. Advanced Components', route: 'advanced-components' },
       { id: 'el-3', title: '3. Custom Pipes', route: 'custom-pipes' },
+      { id: 'el-4', title: '4. Architecture Patterns', route: 'architecture-patterns' },
     ],
   },
 ];
