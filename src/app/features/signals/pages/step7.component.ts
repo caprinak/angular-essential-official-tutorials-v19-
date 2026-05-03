@@ -40,7 +40,7 @@ export class CartStore {
       <p class="step-description">Inject a signal-based service to share reactive state across components.</p>
       <div class="demo-box">
         <div class="cart-badge">
-          🛒 Cart: {{ cartStore.totalQuantity() }} items (${{ cartStore.totalPrice() }})
+          🛒 Cart: {{ cartStore.totalQuantity() }} items (\${{ cartStore.totalPrice() }})
         </div>
 
         <div class="items">

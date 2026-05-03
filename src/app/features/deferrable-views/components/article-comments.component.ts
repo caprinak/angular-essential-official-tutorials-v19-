@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <h3>Comments</h3>
       <ul>
         <li>Amazing post! Angular is evolving fast.</li>
-        <li>I love the new @defer syntax, it's so much cleaner than manually managing lazy loading.</li>
+        <li>I love the new &#64;defer syntax, it's so much cleaner than manually managing lazy loading.</li>
         <li>Can't wait to try this out in my production apps.</li>
       </ul>
     </div>

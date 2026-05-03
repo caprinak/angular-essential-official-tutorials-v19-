@@ -74,7 +74,7 @@ interface LoginData {
 })
 export class Step4Component {
   loginModel = signal<LoginData>({ email: '', password: '', rememberMe: false });
-  touched = signal<Record<string, boolean>>({ email: false, password: false });
+  touched = signal({ email: false, password: false });
 
   emailErrors = computed(() => {
     const errors: string[] = [];

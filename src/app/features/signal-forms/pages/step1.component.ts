@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { JsonPipe } from '@angular/common';
 
 interface LoginData {
   email: string;
@@ -10,7 +11,7 @@ interface LoginData {
 @Component({
   selector: 'app-sf-step1',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, JsonPipe],
   template: `
     <div class="demo-container">
       <h2>Step 1: Setup Form Model</h2>

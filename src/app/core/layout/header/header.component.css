@@ -1,28 +1,92 @@
 .app-header {
-  height: var(--header-height);
-  min-height: var(--header-height);
+  height: 64px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
-  background-color: var(--bg-card);
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  padding: 0 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-title {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--text-main);
+  margin: 0;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 4px 8px;
+  border-radius: 32px;
+  border: 1px solid var(--border-color);
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: rgba(63, 81, 181, 0.1);
+}
+
+.nav-btn:disabled {
+  color: var(--text-muted);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.step-indicator {
+  padding: 0 12px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  min-width: 150px;
+  text-align: center;
+}
+
+.step-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+  white-space: nowrap;
 }
 
 .header-badge {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 20px;
+  background: #e8f5e9;
+  color: #2e7d32;
   font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--primary);
-  background-color: var(--primary-bg);
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .header-title { display: none; }
+  .label { display: none; }
+  .header-center { gap: 8px; }
 }

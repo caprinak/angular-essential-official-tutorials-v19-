@@ -2,6 +2,29 @@
   <div class="header-left">
     <h1 class="header-title">Angular Learning Lab</h1>
   </div>
+
+  <div class="header-center" *ngIf="navService.currentStepInfo()">
+    <button class="nav-btn"
+            [disabled]="!navService.previousStep()"
+            (click)="navService.previousStep() && navService.navigateTo(navService.previousStep()!.fullRoute)"
+            title="Previous Step">
+      <span class="arrow">←</span>
+      <span class="label">Prev</span>
+    </button>
+
+    <div class="step-indicator">
+      <span class="step-name">{{ navService.currentStepInfo()?.title }}</span>
+    </div>
+
+    <button class="nav-btn"
+            [disabled]="!navService.nextStep()"
+            (click)="navService.nextStep() && navService.navigateTo(navService.nextStep()!.fullRoute)"
+            title="Next Step">
+      <span class="label">Next</span>
+      <span class="arrow">→</span>
+    </button>
+  </div>
+
   <div class="header-right">
     <span class="header-badge">Practice Mode</span>
   </div>
